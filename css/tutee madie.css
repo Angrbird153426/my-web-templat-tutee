@@ -1,0 +1,151 @@
+@media (max-width : 992px) {
+    body{
+        background-color: #75ceac;
+    }
+    .contianer{
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    .manu li,.contact,.ty
+    {
+        display: none;
+    }
+    .toggle_btn{
+        display:block;
+    }
+    section{
+        background-image: url('img/1.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+    .section-title-1{
+        width: 100%; 
+        padding-top: 0;
+        display: grid;
+        /* justify-content: center;
+        align-items: center; */
+        gap: 1rem;
+        & h1{
+            font-size: 64px;
+            color: #f8f9fa;
+            font-weight: bolder;
+            width: 63%;
+        }
+        & p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #f8f9fa;
+            width: 60%;
+        }
+    }
+    /* form */
+.but{
+    width: 410px;
+    & form{
+        & .email{
+             height: 40px;
+            }
+        }
+    }
+    /* subscribe */
+.sub{
+    width:40%;
+    height: 42px;
+    
+     & input{
+       padding: 7.5px 30px 20px 20px;
+     }
+
+}
+/* ส่วนที่-2 */
+.title-anything{
+    & p{
+        font-size: 12px;
+    }
+}
+/* grid-1 */
+.grid-title{
+   padding-bottom: 10px;
+}
+.icon{
+    & .bi{
+        font-size: 36px;
+    }
+}
+.title-0{
+    & h2{
+        font-size: 24px;
+    }
+    & p{
+        font-size: 14px;
+    }
+}
+/* ส่วนที่-3 */
+.title-p{
+    & p{
+        font-size: 12px;
+        border-right: 2.5px rgb(255, 255, 255) solid ;
+    }
+}
+/* ส่วนที่-4 */
+.title-4{
+    & p{
+        font-size: 14px;
+    }
+}
+.box-img img{
+    width: 75%;
+} 
+.box-title{
+    padding-left:2rem;
+    & a{
+        font-size: 22px;
+        padding-top:0;
+    }
+    & p{
+        font-size: 12px;
+    }
+}
+/*  ส่วนที่-5 */
+.box-title-5{
+    & p{
+        font-size: 12px;
+        padding: .5rem 0;
+    }
+    & h2 {
+        font-size: 28px;
+    }
+}
+.gu{
+    width: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a{
+    font-size: 14px;
+    padding: .5rem 0;
+    }
+}
+/* ส่วนสุดท้าย */
+.grid-title-footrer{
+    grid-gap: 2rem;
+}
+.box-footer{
+    & h2{
+        font-size: 18px;
+    }
+    & p {
+        font-size: 14px;
+    }
+}   
+.po{
+    margin: -6px 0;
+}
+    /* dropdown_manu */
+    .dropdown_manu{
+        display: block;
+    }
+    
+    
+}

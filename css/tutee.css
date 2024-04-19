@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Madimi+One&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    color: black;
+}
+#header{
+    background-color: #9c9c9b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;/* เป็นเเท็กไว้เรียงลับดับว่าอันมาก่อนมาหลัง */
+}
+.contianer{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* ส่วน navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* logo */
+.logo{
+    & a{
+        color: #f8f9fa;
+        font-size: 28px;
+     & i{
+        color: #f8f9fa;
+        font-size: 34px;
+    }   
+    }
+    
+}
+/* maun */
+.manu-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     & ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+        & li{
+            margin: 0 1rem;
+            font-size: 22px;
+            font-weight: 500;
+            & a{
+                color: #505050;
+                
+            }
+            /* a:hover */
+            & a:hover{
+                color: #05dfd7;
+                transition: all .3s;
+            }
+            
+        }
+    }
+   
+} 
+/* contact */
+.contact ,.contact-2{
+    margin-right: 1rem;
+    background-color: #e83e8c;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    & a{
+    font-size: 22px;
+    font-weight: 500;
+    color: #f8f9fa;
+    }
+    /* a:hover */
+    & a:hover{
+        color: #05dfd7;
+        transition: all .3s;
+    }
+}
+/* ty */
+.ty{
+    & i{
+        color: #000000;
+        font-size: 28px;
+        font-weight: 900;  
+    }
+ 
+}
+
+/* create */
+.toggle_btn{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* dropdown_manu */
+.dropdown_manu {
+    display: none;
+    position:absolute;
+    right: 3.5rem;
+    height: 0;
+    top: 50px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    & .contact-2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+ } 
+
+.dropdown_manu.open{
+    height: 200px;
+}
+.dropdown_manu ul{
+    display:block;
+    padding: .5rem;
+} 
+
+/* ส่วนเนื้อหา-1 */
+section{
+    background-image: url('img/1.jpg');
+    background-position: center;
+    background-size: cover;
+    padding:10%;
+    width: 100%;
+}
+.section-title-1{
+    width: 100%; 
+    padding-top: 9.7vh;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1rem;
+    & h1{
+        font-size: 84px;
+        color: #f8f9fa;
+        font-weight: bolder;
+        width: 60%;
+    }
+    & p{
+        font-size: 18px;
+        font-weight: 500;
+        color: #f8f9fa;
+        width: 48%;
+    }
+}
+
+/* form */
+.but{
+    width: 560px;
+    & form{
+        display: flex;
+        gap: 1rem;
+        & .email{
+             width: 100%;
+             height: 50px;
+             & input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                border: 2px solid rgba(255, 254, 254, 0.2);
+                border-radius: 5px;
+                padding: 20px 45px 20px 20px;
+             }
+             & input::placeholder{
+                color: #555454;
+                font-size: large;
+                font-weight: 500;
+            }
+            }
+        }
+    }
+/* subscribe */
+.sub{
+    width:40%;
+    height: 50px;
+    
+     & input{
+       width: 100%;
+       height: 100%;
+       border: none;
+       border-radius: 5px;
+       outline:none;
+       padding: 10.5px 30px 20px 20px;
+       color: #05dfd7;
+       font-size: 18px;
+       font-weight: 500;
+       background-color: #e83e8c;
+     }
+     & input:hover{
+       color: #555454;
+       transition: all .3s;
+     }   
+}
+
+/* ส่วนที่-2 */
+.section-2{
+    background-color: #333;
+}
+.title-anything{
+    text-align: center;
+    padding-top: 2rem;
+    & h1{
+        font-size:38px;
+        font-weight:bolder;
+        color: #f2f2f2;
+    }
+    & p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #f8f9fa;
+    }
+}
+
+/* grid-1 */
+.grid-1{
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+.grid-title{
+    background: rgba(255, 255, 250, 0.1);
+    width: 100%;
+}
+.icon{
+    & .bi{
+        font-size: 42px;
+        font-weight: bold;
+        color: #e83e8c;
+    }
+}
+.title-0{
+    display: grid;
+    gap: 1rem;
+    & h2{
+        font-size: 34px;
+        font-weight: bold;
+        color: #e3e3e3;
+    }
+    & p{
+        font-size: 22px;
+        font-weight: 300;
+        color: #d9d9d9;
+    }
+}
+
+/* ส่วนที่-3 */
+.section-3{
+    background-color: #505050;
+    padding-bottom: 2rem;
+}
+.section-title-3{
+    text-align: center;
+    padding-top:1rem ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    width: 100%;
+    height: 100vh;
+}
+.grid-title-img-1{
+    background-image: url('img/b8.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    /*  */
+    
+}
+.grid-title-img-2{
+    background: url('img/b7.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.grid-title-img-3{
+    background: url('img/b6.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.grid-title-img-4{
+    background: url('img/b2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.title-h1{
+    & h2{
+        text-align: left;
+        padding: 1rem 2rem 1rem 1rem;
+        & a{
+           color: #f7f7f7;
+        }
+        & a:hover{
+            color: #05dfd7;
+            transition: all .3s;
+        }
+        
+    }
+}
+.title-p{
+    width: 100%;
+    
+    & p{
+        font-size: 18px;
+        color: #f7f7f7;
+        padding-left:30%;
+        padding-right:1rem;
+        display: flex;
+        justify-content: right;
+        align-items:flex-end;
+        border-right: 5px rgb(255, 255, 255) solid ;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+.gr{
+    box-shadow: inset 0 0 0 2000px rgba(0 , 0 , 0 , .3);
+}
+.gr:hover{
+    filter: grayscale(40%);
+    transition: all .6s;
+}
+
+/* ส่วนที่-4 */
+.secton-4{
+    background: #000000;
+    padding-bottom:2rem ;
+}
+.section-title-4{
+    padding-top: 1rem;
+}
+.title-4{
+    text-align: center;
+    padding-bottom: 2rem;
+    & h2{
+        color: #f2f2f2;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    & p{
+        color: #f8f9fa;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+.grid-title-box-1{
+    text-align: center;
+    background: rgba(255, 255, 250, 0.15);
+    border-radius: 5px;
+    border: none;
+    padding-bottom:1rem ;
+    gap: 1rem;
+
+}
+.box-img img{
+    width: 65%;
+    padding-top:1rem;
+    border-radius: 10px;
+    border: none;
+} 
+.box-title{
+    text-align: left;
+    padding-top:1rem ;
+    padding-left:4rem;
+    & a{
+        color: #d9d9d9;
+        font-size: 24px;
+        font-weight: bold;
+        padding-top :.5rem;
+    }
+    & a:hover{
+        color: #05dfd7;
+        transition: all .3s;
+    }
+    & p{
+        color: #f7f7f7;
+        font-size: 16px;
+        font-weight: 400;
+        padding-right: 1rem;
+    }
+
+}
+.flex-p{
+    display: flex;
+    padding-top:.5rem;
+    padding-bottom:.5rem ;
+    & i{
+        color: #9c9c9b;
+    }
+}
+
+/* ส่วนที่-5 */
+.section-5{
+    background: #555454;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+.section-title-5{
+    display: flex;
+    justify-content: center;
+}
+.box-img-5 {
+    width: 100%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    & img{
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding-right: 1rem;
+    }
+}
+.box-title-5{
+    & p{
+        color:#e3e3e3;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+    & h2 {
+        color: #9c9c9b;
+        font-size: 34px;
+        font-weight: bold;
+    }
+}
+.gu{
+    width: 19%;
+    margin-right: 1rem;
+    background-color: #e83e8c;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    & a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #f8f9fa;
+    }
+    /* a:hover */
+    & a:hover{
+        color: #05dfd7;
+        transition: all .3s;
+    }
+}
+
+
+/* ส่วนที่-6 */
+.section-6{
+    background: #505050;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.section-title-6{
+    text-align: center;
+}
+.box-img-6 img{
+    width: 8%;
+    border-radius: 100%;
+}
+.box-title-6{
+    display:grid;
+    gap: 1rem;
+    & h2{
+        color: #f7f7f7;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    & p{
+        width: 100%;
+        padding: 0 25%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #e3e3e3;
+    }
+    & h5{
+        color: #f2f2f2;
+        font-size: 18px;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+    }
+}
+
+/* onclick text */
+.text{
+    text-align: center;
+}
+.text:hover{
+    cursor: pointer;
+}
+.slideshow-box-6{
+    display: none;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active , .dot:hover {
+    background-color:#e83e8c;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+}
+
+
+/* ส่วนสุดท้าย */
+footer{
+    background: #333;
+    padding-top: 1rem;
+}
+.grid-title-footrer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 4rem;
+}
+.box-footer{
+    & h2{
+        color: #f8f9fa;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 1rem 0;
+    }
+    & p {
+        color: #f8f9fa;
+        font-size: 16px;
+        font-weight: 300;
+        padding-bottom: 1rem;
+
+    }
+
+}   
+.box-footer-icon{
+    padding-bottom: 1rem;
+    & .bi{
+        margin-right:5px;
+    }
+    & .bi-facebook{
+        background: #3b5998;
+        color: #f7f7f7;
+        font-size: 18px;
+        padding: 1px 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    & .bi-twitter{
+        background: #1da1f2;
+        color: #f7f7f7;
+        font-size: 18px;
+        padding: 1px 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    & .bi-instagram{
+        background: #c13584;
+        color: #f7f7f7;
+        font-size: 18px;
+        padding: 1px 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    & .bi-google{
+        background: #dd4b39;
+        color: #f7f7f7;
+        font-size: 18px;
+        padding: 1px 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    & .bi-line{
+        background: #0077b5;
+        color: #f7f7f7;
+        font-size: 18px;
+        padding: 1px 5px;
+        border: none;
+        border-radius: 5px;
+    }
+
+}
+
+.pg{
+    margin: -4px 0;
+    & .po{
+        font-size: 12px;
+    }
+}
+.po{
+    margin: -9px 0;
+}
+.ll{
+    & .bi{
+        color: #f8f9fa;
+        margin-right: 5px;
+    }
+}
+.box-footer{
+    & .fo{
+        margin:-5px 0;
+    }
+}
+.jo{
+    border-top:2px rgb(60, 60, 60) solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    & .mo{
+      display: flex;
+      justify-content: space-between;
+    }
+    & .lp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .yu{
+           margin-right:10px; 
+        }
+    }
+    & p{
+        color: #f2f2f2;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
